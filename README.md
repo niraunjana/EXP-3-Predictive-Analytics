@@ -1,10 +1,11 @@
-# EXP 3: Predictive Analytics
+# EXP-03-Predictive Analytics
 
 ## A. Regression Analysis: Build and Evaluate Linear Regression Models and Interpret Regression Coefficients
 
-**Tools:** Python (Scikit-learn), R
+## Tools:
+Python (Scikit-learn), R
 
-### Python Code for Linear Regression
+## Python Code for Linear Regression
 
 ```python
 import numpy as np
@@ -69,7 +70,6 @@ plt.show()
 
   **Intercept:** 0.6237623762376234  
   **Coefficient:** 1.0693069306930694
-
   
 ### 2. Model Evaluation:
 - **Mean Squared Error (MSE):** A measure of the average squared difference between actual and predicted values. Lower values indicate a better fit.
@@ -87,34 +87,26 @@ The plot will show the data points and the fitted regression line.
 
 ## Explanation
 
-### F. Linear Regression Model
-The model assumes a linear relationship between the predictor variable (x) and the target variable (y). The equation of the regression line is:
+### Linear Regression Model
+The model assumes a linear relationship between the predictor variable (x) and the target variable (y). 
 
-\[
-y = b₀ + b₁ \times x
-\]
-
-### G. Intercept and Coefficient
+### Intercept and Coefficient
 - **Intercept**: The intercept (b₀) is where the line crosses the y-axis.
 - **Coefficient**: The coefficient (b₁) indicates how much y increases for each unit increase in x.
 
-### H. Model Evaluation
+### Model Evaluation
 - **Mean Squared Error (MSE)** helps to evaluate the error between the actual and predicted values.
 - **R-squared** helps to determine the proportion of variance explained by the model.
-
-The plot will visually confirm the model’s accuracy by showing the relationship between the actual data points and the regression line.
-
----
-
+- 
 ## B. Classification Models
 
-### Logistic Regression, Decision Trees and Model Accuracy Assessment
+## Logistic Regression, Decision Trees and Model Accuracy Assessment
 In this section, we will implement Logistic Regression and Decision Trees and assess model accuracy with confusion matrices.
 
-### Tools
+## Tools
 - Python (Scikit-learn)
 
-### Python Code for Logistic Regression and Decision Trees
+## Python Code for Logistic Regression and Decision Trees
 
 ```python
 import numpy as np
@@ -180,7 +172,7 @@ plt.tight_layout()
 ```
 ## Output
 
-### 1. Model Accuracy
+### Model Accuracy
 - **Logistic Regression Accuracy**: A percentage of correctly classified instances.
 - **Decision Tree Accuracy**: Similarly, the percentage of correct predictions.
 
@@ -188,11 +180,10 @@ plt.tight_layout()
     **Logistic Regression Accuracy:** 0.9777777777777777  
     **Decision Tree Accuracy:** 0.9777777777777777
 
-# Confusion Matrices
+### Confusion Matrices
+The confusion matrix displays the true positive (TP)**, false positive (FP), true negative (TN), and false negative (FN) predictions for each class.
 
-The confusion matrix displays the **true positive (TP)**, **false positive (FP)**, **true negative (TN)**, and **false negative (FN)** predictions for each class.
-
-## Example Output (for Logistic Regression and Decision Tree)
+### Example Output (for Logistic Regression and Decision Tree)
 
 [[16  0  0]
  [ 0 14  1]
@@ -203,32 +194,29 @@ The confusion matrix displays the **true positive (TP)**, **false positive (FP)*
 [[16  0  0]
  [ 0 14  1]
  [ 0  0 14]]
-
  
----
-
 ### Definitions:
 - **True Positives (TP)**: Diagonal elements (e.g., `16` for class `0` in Logistic Regression).
 - **False Positives (FP)**: Off-diagonal elements (e.g., `1` for class `1` predicting class `2`).
 - **False Negatives (FN)**: Off-diagonal elements (e.g., `1` for class `2` predicting class `1`).
-# Confusion Matrix Visualization
-
+- 
+### Confusion Matrix Visualization
 The confusion matrices will be displayed as **heatmaps** for easy interpretation. The heatmaps highlight the counts for each prediction outcome.
 
 ![image](https://github.com/user-attachments/assets/cea6698f-3812-4d58-ac33-6b1ee964b018)
 
 
-## Explanation
+## Explanation:
 
-### 1. Logistic Regression:
+### Logistic Regression:
 - Logistic Regression is a statistical method used for **binary** or **multiclass classification problems**.
 - The model predicts the **probability** of a particular class.
 
-### 2. Decision Trees:
+### Decision Trees:
 - Decision Trees split the data into subsets based on **feature values**.
 - Each **node** in the tree represents a feature decision, and each **leaf** represents a class label.
 
-### 3. Confusion Matrix:
+### Confusion Matrix:
 - A Confusion Matrix is a useful tool for understanding the performance of a classification model.
 - It shows the **true vs. predicted labels**, helping to calculate key metrics like:
   - Accuracy
@@ -236,13 +224,13 @@ The confusion matrices will be displayed as **heatmaps** for easy interpretation
   - Recall
   - F1-score
 
-### 4. Accuracy:
+### Accuracy:
 - Accuracy is calculated as:
   \[
   \text{Accuracy} = \frac{\text{Correct Predictions (Sum of Diagonal Elements)}}{\text{Total Predictions (Sum of All Elements in the Matrix)}}
   \]
 
-### 5. Heatmap Visualization:
+### Heatmap Visualization:
 - The heatmaps allow us to visually identify:
   - Where predictions are **correct**.
   - Where the model is making **mistakes**.
